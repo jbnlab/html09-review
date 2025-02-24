@@ -12,11 +12,11 @@
 */
 
 showClock();
-setInterval(showClock(), 1000);
+setInterval("showClock()", 1000);
 
 function showClock() {
    /* Store the current date and time */
-   var thisDay = new Date("May 19, 2018 9:31:27");
+   var thisDay = new Date();
    var localDate = thisDay.toLocaleDateString();
    var localTime = thisDay.toLocaleTimeString();
 
